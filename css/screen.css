@@ -340,6 +340,33 @@ input::placeholder {
   font-size: 0.75rem;
   line-height: 0.875rem;
 }
+
+.c-horizon__sky-wrapper {
+  position: relative;
+  height: 12.5rem;
+  overflow: hidden;
+}
+
+.c-horizon__sky {
+  position: relative;
+  height: 100%;
+}
+
+.c-horizon__sun {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+}
+
+.c-horizon__sun::before {
+  content: attr(data-time);
+  margin-bottom: 0.5rem;
+}
 /*------------------------------------*\
 #UTILITIES
 \*------------------------------------*/
