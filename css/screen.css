@@ -13,7 +13,7 @@
   --color-beta: #0f3557;
 
   --color-front: var(--color-beta)
-  --color-back: var(--color-alpha);
+  --color-back: var(---color-alpha);
 
   --global-background: var(--color-back);
   --global-text-color: var(--color-front);
@@ -402,7 +402,12 @@ input::placeholder {
 .is-night {
   --color-front: var(--color-alpha);
   --color-back: var(--color-beta);
+}
 
+.is-day{
+  --color-front: var(--color-beta);
+  --color-back: var(--color-alpha);
+}
 /*------------------------------------*\
 #MEDIA
 \*------------------------------------*/
